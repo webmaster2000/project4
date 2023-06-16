@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    
+    
+}
+
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 16px;
+    background-color: black;
+    color: #DCCA87;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    background-color: #DCCA87;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 15px;
+
+}
+
+.add a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+.store-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.middle-nav {
+    max-width: 400px;
+    width: 100%;
+}
+
+.middle-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.path {
+    display: none;
+    fill: #DCCA87;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+  
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0px 8px;
+        background-color: black;
+        color: #DCCA87;
+
+    }
+
+    .store-name {
+        font-size: 20px;
+    }
+
+    .middle-nav {
+        display: none;
+    }
+
+    .profile {
+        position: relative;
+        background-color: black;
+        color: white;
+        
+    }
+
+    .dropdown {
+        background-color: aqua;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.69);
+
+    }
+
+    .dropdown ul li {
+        padding: 10px 0px;
+        font-size: 16px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .path {
+        display: flex;
+        fill: #DCCA87;
+
+    }
+
+}
